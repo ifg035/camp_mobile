@@ -50,5 +50,11 @@ button{
     height: 30px;
 }
 /*======================/header==========================*/
+.banner{
+    background: url(../images/캐라반\ 지도.jpg) no-repeat center/cover;
+    margin: 0 auto;
+    width:393px;
+    height: 393px;
+}
 /*======================/main==========================*/
 /*======================/footer==========================*/
