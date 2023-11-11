@@ -40,6 +40,7 @@ button{
 
 .wrap{
     max-width: 393px;
+    overflow: hidden;
 }
 
 .table{
@@ -49,9 +50,7 @@ button{
 p{
     font-size:1rem;
 }
-/* @media screen and (max-width:393px) {
-    
-} */
+
 .d-none{
     display: none;
 }
@@ -78,11 +77,11 @@ p{
 .mx3{
     margin:3rem 0;
 }
+
 /*======================/commonstyle==========================*/
+@media screen and (max-width:393px) {
 .logo{
-    background: url(../images/logo.jpg) no-repeat center/cover;
-    width:140px;
-    height:40px;
+
 }
 .login{
     background: url(../images/login.png) no-repeat center/cover;
@@ -158,3 +157,4 @@ p{
     background: url(../images/bottom_logo.jpg) no-repeat center/cover;
 }
 /*======================/footer==========================*/
+}
