@@ -13,10 +13,8 @@
 <body>
     <div class="wrap">
         <header>
-            <div  class="justify-between">
-                <div class="logo">
-                    <img src="images/logo.jpg" alt="logo"></img>
-                </div>
+            <div class="align-center justify-between">
+                <img src="images/logo.jpg" alt="logo"></img>
                 <div class="tab d-flex">
                     <a href="#">
                         <div class="login my1">
@@ -114,22 +112,22 @@
             </div>
             <h3 class="text-center mx1">주요시설</h3>
             <div class="main-place">
-                <div class="btn-text">
-                    <p>캐러벤</p>
-                    <button type="submit">자세히보기</button>
-                </div>
                 <div class="campcar">
                     <img src="images/camping car.jpg" alt="campcar">
+                </div>
+                <div class="btn-text1 text-center">
+                    <p>캐러벤</p>
+                    <button type="submit">자세히보기</button>
                 </div>
             </div>
             <h3 class="text-center mx1">편의시설</h3>
             <div class="sub-place">
-                <div class="btn-text">
-                    <p>야영장</p>
-                    <button type="submit">자세히보기</button>
-                </div>
                 <div class="campsite">
                     <img src="images/campsite.jpg" alt="campsite">
+                </div>
+                <div class="btn-text2 text-center">
+                    <p>야영장</p>
+                    <button type="submit">자세히보기</button>
                 </div>
             </div>
             <div class="sights-place">
@@ -140,16 +138,16 @@
                             <li>
                                 <div class="sights1">
                                     <img src="images/sights 1.jpg" alt="땅끝전망대">
+                                    <p>땅끝전망대</p>
                                 </div>
-                                <p>땅끝전망대</p>
                             </li>
                         </a>
                         <a href="#">
                             <li>
                                 <div class="sights2">
                                     <img src="images/sights 2.jpg" alt="달마산 미황사">
+                                    <p>달마산 미황사</p>
                                 </div>
-                                <p>달마산 미황사</p>
                             </li>
                         </a>
                     </ul>
@@ -160,24 +158,26 @@
                             <li>
                                 <div class="sights3">
                                     <img src="images/sights 3.jpg" alt="달마산 도솔암">
+                                    <p>달마산 도솔암</p>
                                 </div>
-                                <p>달마산 도솔암</p>
                             </li>
                         </a>
                         <a href="#">
                             <li>
                                 <div class="sights4">
                                     <img src="images/sights 4.jpg" alt="송호리 해수욕장">
+                                    <p>송호리 해수욕장</p>
                                 </div>
-                                <p>송호리 해수욕장</p>
                             </li>
                         </a>
                     </ul>
                 </div>
-                <button type="submit">+</button>
+                <div class="place-btn">
+                    <button type="submit">+</button>
+                </div>
             </div>
             <div class="use-guide">
-                <h3>이용사항</h3>
+                <h3 class="text-center">이용사항</h3>
                 <div class="use-time">
                     <h4>이용시간</h4>
                     <p><span>휴장일</span> 매주 월요일/ 명절 전날 및 명절당일</p>
@@ -187,34 +187,35 @@
                         <h4>이용요금</h4>
                         <p>* 자세한 내용은 예약안내를 참고해주세요.</p>
                     </div>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>구 분<th>
-                                <th>비수기<th>
-                                <th>성수기</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>4인용</td>
-                                <td>5~6만원</td>
-                                <td>8~10만원</td>
-                            </tr>
-                            <tr>
-                                <td>5인용</td>
-                                <td>6~8만원</td>
-                                <td>10~12만원</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="justify-center my2">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>구분</th>
+                                    <th>비수기</th>
+                                    <th>성수기</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>4인용</td>
+                                    <td>5~6만원</td>
+                                    <td>8~10만원</td>
+                                </tr>
+                                <tr>
+                                    <td>5인용</td>
+                                    <td>6~8만원</td>
+                                    <td>10~12만원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
                 <div class="use-deposit">
                     <div class="deposit-text">
                         <h4>입금방법</h4>
-                        <p>- 예약접수 다음날 오후5시까지 입금하셔야 합니다. 시간내에 입금을 하지</p>
-                        <p>않을 시 예약접수가 취소됩니다.</p>
-                        <br>
+                        <p>- 예약접수 다음날 오후5시까지 입금하셔야 합니다. 시간내에 입</p>
+                        <p class="depo-p2">금을 하지 않을 시 예약접수가 취소됩니다.</p>
                         <p>- 다음날 예약을 전날 예약시 사용일 정오 12시까지 입금하셔야 합니다.</p>
                     </div>
                     <div class="deposit-info">
@@ -223,8 +224,8 @@
                             <h4><span>351-0504-0965-23</span></h4>
                             <h4>농협(예금주:해남군청)</h4>
                         </div>
-                        <p>* 반드시 예약자와 입금자의 성함이 동일해야합니다.</p>
                     </div>
+                    <p class="depo-p">* 반드시 예약자와 입금자의 성함이 동일해야합니다.</p>
                 </div>
             </div>
         </main>
@@ -232,17 +233,21 @@
             <div class="foot-info">
                 <p>이용약관 | 개인정보처리방침 | 이메일주소 무단수집 거부 | 영상정보처리기기운영방침 | 조례</p>
             </div>
-            <div class="foot-left">
-                <a href="#">
-                    <div class="foot-logo"></div>
-                </a>
-            </div>
-            <div class="foot-right">
-                <h4>땅끝오토캠핑장</h4>
-                <p>주소 : 전남 해남군 송지면 갈산길 25-5(땅끝오토캠핑장)</p>
-                <p>대표전화 : 061-534-0830 / 대표팩스 : 061-530-5542</p>
-                <p>사업자등록번호 : 415-83-00016</p>
-                <p>Copyright(c)2012 해남군(Haenam-gun). Allrights Reserved.</p>
+            <div class="d-flex">
+                <div class="foot-left">
+                    <a href="#">
+                        <div class="foot-logo">
+                            <img src="images/bottom_logo.jpg" alt="gray">
+                        </div>
+                    </a>
+                </div>
+                <div class="foot-right">
+                    <h4>땅끝오토캠핑장</h4>
+                    <p>주소 : 전남 해남군 송지면 갈산길 25-5(땅끝오토캠핑장)</p>
+                    <p>대표전화 : 061-534-0830 / 대표팩스 : 061-530-5542</p>
+                    <p>사업자등록번호 : 415-83-00016</p>
+                    <p>Copyright(c)2012 해남군(Haenam-gun). Allrights Reserved.</p>
+                </div>
             </div>
         </footer>
     </div>
