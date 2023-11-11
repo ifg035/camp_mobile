@@ -38,10 +38,6 @@ button{
     border:0;
 }
 
-.wrap{
-    max-width: 393px;
-    overflow: hidden;
-}
 
 .table{
     width:100%;
@@ -100,18 +96,31 @@ p{
 
 /*======================/commonstyle==========================*/
 /* @media screen and (max-width:393px) { */
-.logo{
-    width:140px;
-    height: 40px;
-}
-/*======================/header==========================*/
-
- .campcar img{
-    position:absolute;
-}
-
-.btn-text1{
-    position:relative;
+    .wrap{
+        max-width: 393px;
+        overflow: hidden;
+    }
+    .login{
+        margin-top:.3rem;
+    }
+    .tab{
+        width:70px;
+    }
+    .tab-menu{
+        margin-left:8rem;
+    }
+    .logo{
+        width:140px;
+        height: 40px;
+    }
+    /*======================/header==========================*/
+    
+    .campcar img{
+        position:absolute;
+    }
+    
+    .btn-text1{
+        position:relative;
     top:80px;
     color:white;
 }
@@ -120,7 +129,12 @@ p{
     border:1px solid white;
     font-size: .7rem;
 }
-
+.check{
+     margin: .1rem;
+}
+.review{
+    margin: .1rem;
+}
 .campsite img{
     position:static;
     flex-direction: column;
