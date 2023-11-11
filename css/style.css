@@ -21,11 +21,11 @@ ul,ol,li{
 }
 
 .material-symbols-outlined {
-font-variation-settings:
-'FILL' 0,
-'wght' 400,
-'GRAD' 0,
-'opsz' 24
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
 }
 
 body{
@@ -57,7 +57,24 @@ p{
 .d-flex{
     display:flex;
 }
-
+.justify-around{
+    justify-content: space-around;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.text-center{
+    text-align: center;
+}
+.pos-ab{
+    position:absolute        
+}
+.pos-re{
+    position: relative;
+}
 .my1{
     margin:0 1rem;
 }
@@ -81,80 +98,56 @@ p{
 /*======================/commonstyle==========================*/
 @media screen and (max-width:393px) {
 .logo{
-
-}
-.login{
-    background: url(../images/login.png) no-repeat center/cover;
-    width:30px;
-    height: 30px;
+    width:140px;
+    height: 40px;
 }
 /*======================/header==========================*/
 .banner{
-    background: url(../images/main-camping.png) no-repeat center/cover;
-    margin: 0 auto;
-    width:393px;
-    height: 393px;
+
 }
 .reserve{
-    background: url(../images/Reserve.png) no-repeat center/cover;
-    width:45px;
-    height: 45px;
+
 }
 
 .info{
-    background:url(../images/Info.png) no-repeat center/cover;
-    width:50px;
-    height:50px;
+
 }
 
 .check{
-    background:url(../images/check\ 1.png) no-repeat center/cover;
-    width:45px;
-    height: 45px;
+
 }   
 
 .review{
-    background:url(../images/review.png) no-repeat center/cover;
-    width:45px;
-    height:45px;
+
+}
+.campcar>img{
+    position:relative;
+}
+.btn-text{
+    position:absolute;
 }
 
-.campcar{
-    background:url(../images/camping\ car.jpg) no-repeat center/cover;
-    width:392px;
-    height: 222px;
-}
 
 .campsite{
-    background:url(../images/campsite.jpg) no-repeat center/cover;
-    width:392px;
-    height: 222px;
+
 }
 
 
 .sights1{
-    background:url(../images/sights\ 1.jpg) no-repeat center/cover;
-    width:156px;
-    height: 143px;
+
 }
 .sights2{
-    background:url(../images/sights\ 2.jpg) no-repeat center/cover;
-    width:156px;
-    height: 143px;
+
 }
 .sights3{
-    background:url(../images/sights\ 3.jpg) no-repeat center/cover;
-    width:156px;
-    height: 143px;
+
 }
 .sights4{
-    background:url(../images/sights\ 4.jpg) no-repeat center/cover;
-    width:156px;
-    height: 143px;
+
 }
 /*======================/main==========================*/
 .foot-logo{
-    background: url(../images/bottom_logo.jpg) no-repeat center/cover;
+
 }
 /*======================/footer==========================*/
 }
