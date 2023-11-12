@@ -75,23 +75,23 @@ p{
     position: relative;
 }
 .my1{
-    margin:0 1rem;
+    margin:1rem 0;
 }
 .my2{
-    margin:0 2rem;
+    margin:2rem 0;
 }
 .my3{
-    margin:0 3rem;
+    margin:3rem 0;
 }
 
 .mx1{
-    margin:1rem 0;
+    margin:0 1rem;
 }
 .mx2{
-    margin:2rem 0;
+    margin:0 2rem;
 }
 .mx3{
-    margin:3rem 0;
+    margin:0 3rem;
 }
 
 /*======================/commonstyle==========================*/
@@ -114,9 +114,35 @@ p{
         height: 40px;
     }
     /*======================/header==========================*/
-    
+    .container{
+        display: grid;
+        grid-template-columns:90px 90px 90px 90px;
+        grid-template-rows: 40px 40px 40px;
+        justify-content: center;
+    }
+    .grid{
+        border:1px solid #333;
+        text-align: center;
+        align-items: center;
+    }
+    .grid-point{
+        background:rgb(240, 109, 109);
+    }
+    .grid-text{
+        background:rgb(240, 109, 109);
+        width:70px;
+        text-align: center;
+        margin: .5rem 0 0 305px
+    }
     .campcar img{
         position:absolute;
+    }
+    
+    .depo-text{
+        margin:0 1.725rem;
+    }
+    .use-people{
+        margin:0 1.325rem;
     }
     
     .btn-text1{
@@ -264,6 +290,7 @@ td{
     font-size:.6rem;
     margin: 0 0 1rem 1rem;
 }
+
 /*======================/main==========================*/
 .foot-info{
     width:393px;
