@@ -530,6 +530,7 @@ td{
 .reserve-btn{
     justify-content: center;
     text-align: center;
+    font-weight: bold;
     margin:.5rem auto;
     background: #fefe;
     border:1px solid #333;
