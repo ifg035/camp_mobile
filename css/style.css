@@ -96,6 +96,11 @@ p{
 
 /*======================/commonstyle==========================*/
 /* @media screen and (max-width:393px) { */
+header{
+    position:fixed;
+    background:white;
+    width:393px;
+}
 .wrap{
     max-width: 393px;
     overflow: hidden;
@@ -116,8 +121,16 @@ p{
 /*======================/header==========================*/
 .navi{
     width:200px;
+    left:190px;
     text-align: center;
-    background: #a3a2a2;
+    background:white;
+    position:fixed;
+}
+.lnb{
+    border:1px solid #333;
+    background:white;
+    font-size:1rem;
+    text-align:
 }
 .container{
     display: grid;
