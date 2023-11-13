@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예약하기</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="script/main.js">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>예약하기</title>
+    <link rel="stylesheet" href="script/main.js">
+    <script src="script/jquery-3.7.1.min.js"></script>
 </head>
 <body>
     <div class="wrap">
@@ -17,13 +17,13 @@
             <div>
                 <div class="tab d-flex mx1 justify-between align-center ">
                     <img class="my1" src="images/logo.jpg" alt="logo"></img>
-                    <div class="tab-menu d-flex align-center mx1">
+                    <div class="tab-menu d-flex align-center my1">
                         <a href="#">
                             <div class="login mx1">
                                 <img src="images/login.png" alt="login">
                             </div>
                         </a>
-                        <button>
+                        <button id="navi-btn">
                             <span class="material-symbols-outlined">
                                 menu
                             </span>
@@ -32,52 +32,114 @@
                 </div>
             </div>
                 <div class="navi">
-                    <ul class="gnb d-none">
-                        <a href="#">
-                            <li>땅끝오토캠핑장 ▼</li>
-                                <ul class="lnb">
-                                    <li>캠핑장 소개</li>
-                                    <li>운영안내</li>
-                                    <li>오시는 길</li>
-                                </ul>
-                        </a>
-                        <a href="#">
-                            <li>시설안내 ▼</li>
-                                <ul class="lnb">
-                                    <li>캠핑장 안내도</li>
-                                    <li>캐러밴소개</li>
-                                    <li>야영장 이용안내</li>
-                                    <li>야영장 소개</li>
-                                    <li>편의시설</li>
-                                    <li>산책로/등산로</li>
-                                </ul>
-                        </a>
-                        <a href="#">
-                            <li>여행정보 ▼</li>
-                                <ul class="lnb">
-                                    <li>주변관광지</li>
-                                    <li>특산물</li>
-                                </ul>
-                        </a>
-                        <a href="#">
-                            <li>참여마당 ▼</li>
-                                <ul class="lnb">
-                                    <li>공지사항</li>
-                                    <li>이용후기</li>
-                                    <li>자주하는 질문</li>
-                                    <li>묻고답하기</li>
-                                </ul>
-                        </a>
+                    <ul class="gnb">
+                        <li>
+                            <a href="index.html">땅끝오토캠핑장 ▼</a>
+                            <ul class="lnb d-none">
+                                <li>캠핑장 소개</li>
+                                <li>운영안내</li>
+                                <li>오시는 길</li>
+                            </ul>
+                        </li>
+                        <li>
+                            시설안내 ▼
+                            <ul class="lnb d-none">
+                                <li>캠핑장 안내도</li>
+                                <li>캐러밴소개</li>
+                                <li>야영장 이용안내</li>
+                                <li>야영장 소개</li>
+                                <li>편의시설</li>
+                                <li>산책로/등산로</li>
+                            </ul>
+                        </li>
+                        <li>
+                            여행정보 ▼
+                            <ul class="lnb d-none">
+                                <li>주변관광지</li>
+                                <li>특산물</li>
+                            </ul>
+                        </li>
+                        <li>
+                            참여마당 ▼
+                            <ul class="lnb d-none">
+                                <li>공지사항</li>
+                                <li>이용후기</li>
+                                <li>자주하는 질문</li>
+                                <li>묻고답하기</li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
         </header>
         <main>
-            <h3 class="text-center">예약하기</h3>
-            <h4 class="text-center">날짜선택</h4>
+            <h3 class="text-center reserved-title">예약하기</h3>
+            <h4 class="text-center my1">날짜선택</h4>
             <div class="date-text d-flex">
                 <button class="date-btn" type="submit"> < </button>
                 <h4 class="text-center">2023.11</h4>
                 <button type="submit"> > </button>
+            </div>
+            <table>
+                    <div class="weekend">
+                    <thead>
+                        <tr>
+                            <th>일</th>
+                            <th>월</th>
+                            <th>화</th>
+                            <th>수</th>
+                            <th>목</th>
+                            <th>금</th>
+                            <th>토</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                            <td>29</td>
+                            <td>30</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             <h4 class="text-center my1">예약현황</h4>
             <div class="container">
@@ -122,5 +184,6 @@
             </div>
         </footer>
     </div>
+    <script src="script/main.js"></script>
 </body>
 </html>
