@@ -96,59 +96,64 @@ p{
 
 /*======================/commonstyle==========================*/
 /* @media screen and (max-width:393px) { */
-    .wrap{
-        max-width: 393px;
-        overflow: hidden;
-    }
-    .login{
-        margin-top:.3rem;
-    }
-    .tab{
-        width:70px;
-    }
-    .tab-menu{
-        margin-left:8rem;
-    }
-    .logo{
-        width:140px;
-        height: 40px;
-    }
-    /*======================/header==========================*/
-    .container{
-        display: grid;
-        grid-template-columns:90px 90px 90px 90px;
-        grid-template-rows: 40px 40px 40px;
-        justify-content: center;
-    }
-    .grid{
-        border:1px solid #333;
-        text-align: center;
-        align-items: center;
-    }
-    .grid-point{
-        background:rgb(240, 109, 109);
-    }
-    .grid-text{
-        background:rgb(240, 109, 109);
-        width:70px;
-        text-align: center;
-        margin: .5rem 0 0 305px
-    }
-    .campcar img{
-        position:absolute;
-    }
-    
-    .depo-text{
-        margin:0 1.725rem;
-    }
-    .use-people{
-        margin:0 1.325rem;
-    }
-    
-    .btn-text1{
-        position:relative;
-    top:80px;
-    color:white;
+.wrap{
+    max-width: 393px;
+    overflow: hidden;
+}
+.login{
+    margin-top:.3rem;
+}
+.tab{
+    width:70px;
+}
+.tab-menu{
+    margin-left:8rem;
+}
+.logo{
+    width:140px;
+    height: 40px;
+}
+/*======================/header==========================*/
+.navi{
+    width:200px;
+    text-align: center;
+    background: #a3a2a2;
+}
+.container{
+    display: grid;
+    grid-template-columns:90px 90px 90px 90px;
+    grid-template-rows: 40px 40px 40px;
+    justify-content: center;
+}
+.grid{
+    border:1px solid #333;
+    text-align: center;
+    align-items: center;
+}
+.grid-point{
+    background:rgb(240, 109, 109);
+}
+.grid-text{
+    background:rgb(240, 109, 109);
+    width:70px;
+    text-align: center;
+    margin: .5rem 0 0 305px
+}
+.campcar img{
+    position:absolute;
+}
+
+.depo-text{
+    margin:0 1.725rem;
+}
+.use-people{
+    margin:0 1.325rem;
+}
+
+.btn-text1{
+    position:relative;
+top:80px;
+color:white;
 }
 .btn-text1 button{
     color:white;
