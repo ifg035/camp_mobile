@@ -176,6 +176,13 @@ td:hover,.grid:hover{
     margin:0 1rem;
     align-items: center;
 }
+.reserve>table{
+    margin:0 auto;
+}
+.reserve>table>thead>tr>th{
+    width:80px;
+    height:50px;
+}
 .reserved-title{
     margin-top:5rem;
     font-size:1.7rem;
@@ -500,7 +507,13 @@ td{
     font-weight: bold;
     grid-column: 1/3;
     grid-row: 1/3;
-
+}
+.content{
+    content:"";
+    display:block;
+    width:20px;
+    height:10px;
+    background:transparent;
 }
 .refund2{
     border:1px solid #333;
