@@ -257,6 +257,7 @@ td:hover,.grid:hover{
 .depo-text{
     margin:0 1.725rem;
 }
+
 .use-people{
     margin:0 1.325rem;
 }
@@ -349,6 +350,9 @@ td:hover,.grid:hover{
 .use-time{
     margin: 1rem 2rem;
 }
+.use-text{
+    margin-bottom:1rem
+}
 .use-time h4{
     margin:.5rem 0;
 }
@@ -367,6 +371,9 @@ td:hover,.grid:hover{
 }
 .use-money{
     margin: 0 2rem;
+}
+.use>h4{
+    margin:0 0 1rem 1rem;
 }
 #sub-usem{
     align-items: center;
@@ -446,7 +453,9 @@ td{
     font-size:.6rem;
     margin: 0 0 1rem 1rem;
 }
+
 .price-box{
+    margin: 0 1rem 0 1rem ;
     text-align:center;
     display: grid;
     border:2px solid #333;
@@ -488,6 +497,7 @@ td{
 }
 
 .refund-box{
+    margin: .5rem 1rem 0 1rem ;
     text-align: center;
     font-size: 1rem;
     border: 2px solid #333;
@@ -496,6 +506,7 @@ td{
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 .refund2-box{
+    margin: .5rem 1rem 0 1rem ;
     text-align: center;
     font-size: 1rem;
     display: grid;
