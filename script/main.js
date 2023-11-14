@@ -24,6 +24,22 @@ $(function(){
                 $(".navi").css("display","none");
                 isClicked = true;
             }
+        }   
+        
+        
+    })
+    // reserve point
+    $("#point").on("click",function(){
+        if(isMobile){
+            if(isClicked){
+                $(".reserve").css("display","block");
+                isClicked=false;
+            } else{
+                $(".reserve").css("display","none");
+                isClicked=true;
+            }
+            
+            
         }
     })
 })

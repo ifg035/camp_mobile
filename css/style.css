@@ -36,6 +36,10 @@ body{
     font-size: 20px;
 }
 
+h4{
+    color:#333;
+}
+
 button{
     background:none;
     border:0;
@@ -77,6 +81,10 @@ p{
 .pos-re{
     position: relative;
 }
+
+.my-5{
+    margin:.5rem 0;
+}
 .my1{
     margin:1rem 0;
 }
@@ -108,11 +116,7 @@ table{
     text-align: center;
     font-weight: bold;
 }
-th{
-    background:var(--main-color);
-    width:50px;
-    height: 50px;
-}
+
 td{
     background:#D9DCE1;
     width:50px;
@@ -121,11 +125,22 @@ td{
 td:hover,.grid:hover{
     background:#707171;
 }
-td:nth-child(1),th:nth-child(1){
+.main-color{
+    background:var(--main-color);
+    width:50px;
+    height: 50px;
+}
+.red{
     color:red;
 }
-td:nth-last-child(1),th:nth-last-child(1){
+.red-bottom{
+    border-bottom:3px solid red;
+}
+.blue{
     color:blue;
+}
+.black{
+    color:black;
 }
 .text-main{
     color:#2373CE;
@@ -188,7 +203,7 @@ td:nth-last-child(1),th:nth-last-child(1){
 .lnb{
     /* border-top:2px solid #333; */
     color:#454444;
-    text-align: bold;
+    font-weight: bold;
     background:white;
     font-size:1rem;
     text-align:right;
@@ -207,18 +222,31 @@ td:nth-last-child(1),th:nth-last-child(1){
 }
 
 .grid-point{
-    background:rgb(240, 109, 109);
+    background:rgb(109, 144, 240);
+    border-radius: 1rem;
 }
 .grid-text{
-    background:rgb(240, 109, 109);
-    width:70px;
+    display: flex;
+    justify-content: end;
+    margin:.3rem 2rem 0 0;
+}
+.grid-text span{
+    content: "";
+    display: block;
+    border-radius: 1rem;
+    background:rgb(109, 144, 240);
+    width:40px;
+    margin: .2rem .5rem;
+    height: 20px;
     text-align: center;
-    margin: .5rem 0 0 305px
+}
+.main-place{
+    height: 220px;
+    margin:1rem 0;
 }
 .campcar img{
     position:absolute;
 }
-
 .depo-text{
     margin:0 1.725rem;
 }
@@ -227,13 +255,34 @@ td:nth-last-child(1),th:nth-last-child(1){
 }
 
 .btn-text1{
+    font-weight: bold;
     position:relative;
-top:80px;
-color:white;
+    color:#333;
+    top:35%;
 }
 .btn-text1 button{
-    color:white;
-    border:1px solid white;
+    color:#333;
+    border:2px solid #333;
+    width:90px;
+    font-size: .7rem;
+}
+.sub-place{
+    height: 220px;
+    margin:1rem 0;
+}
+.campsite img{
+    position:absolute;
+}
+.btn-text2{
+    font-weight: bold;
+    position:relative;
+    color:#333;
+    top:35%;
+}
+.btn-text2 button{
+    color:#333;
+    border:2px solid #333;
+    width:90px;
     font-size: .7rem;
 }
 .check{
@@ -241,20 +290,6 @@ color:white;
 }
 .review{
     margin: .1rem;
-}
-.campsite img{
-    position:static;
-    flex-direction: column;
-}
-.btn-text2{
-    position:relative;
-    top:10px;
-    color:white;
-}
-.btn-text2 button{
-    color:white;
-    border:1px solid white;
-    font-size: .7rem;
 }
 
 .place1{
@@ -292,6 +327,7 @@ color:white;
     background:rgba(222, 221, 221, 0.933);
     opacity: .8;
     margin: 0 auto;
+    border:1px solid #333;
     border-radius: 1rem;
     margin-bottom:1rem;
     justify-content: center;
@@ -299,6 +335,9 @@ color:white;
     width:70px;
     height: 27px;
     line-height: 17px;
+}
+.use-guide{
+ margin: 1.5rem 0; 
 }
 .use-time{
     margin: 1rem 2rem;
@@ -308,13 +347,29 @@ color:white;
 }
 .use-time p{
     margin: 0 0 0 1rem;
+    text-align: center;
+    display: flex;
 }
 .use-time span{
+    display:block;
+    margin:0 .5rem 0 0 ;
     background:#F23131;
     border-radius: .5rem;
+    width:60px;
+    height:30px;
 }
 .use-money{
     margin: 0 2rem;
+}
+#sub-usem{
+    align-items: center;
+    background:#fefefe;
+    color:#333;
+    margin:0 auto;
+}
+#sub-usem>thead>tr>th{
+    width:90px;
+    height: 40px;
 }
 .money-text{
     display: flex;
@@ -330,7 +385,7 @@ table{
     align-items: center;
     border: 1px solid #333;
     border-collapse: collapse;
-    margin:1rem;
+    margin:0 1rem;
 }
 th,td{
     align-items: center;
@@ -341,11 +396,24 @@ th,td{
 td{
    padding:2px;
 }
+#point{
+    position:relative;
+    overflow:hidden;
+}
+.point-span{
+   position:absolute;
+   color:orange;
+   bottom:40px;
+   right:-8px;
+}
 .use-deposit{
     margin:0 2rem;
 }
+.deposit-text h4{
+    margin:.5rem 0;
+}
 .deposit-text p{
-        margin: 0 0 0 1rem;
+    margin: .5rem 0 0 1rem;
     font-size:.725rem;
 }
 .depo-p2{
@@ -550,7 +618,7 @@ td{
 }
 .foot-info p{
     line-height:43px;
-    font-size: .625rem;
+    font-size: .555rem;
     background: #D9D9D9;
 }
 .foot-logo img{
