@@ -8,6 +8,6 @@
 
 # link
 -dothome
-http://icetea.dothome.co.kr/camp_mobile
+http://icetea1.dothome.co.kr/camp-m/
 -figma
 https://www.figma.com/file/tswz8v0Efi2ZKDXtaFGig5/%EB%95%85%EB%81%9D%EC%98%A4%ED%86%A0%EC%BA%A0%ED%95%91%EC%9E%A5?type=design&mode=design&t=6kGMNs7GZ8kmzUxq-1
